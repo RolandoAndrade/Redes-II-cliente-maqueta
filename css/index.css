@@ -1,0 +1,75 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+header
+{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+}
+
+aside
+{
+    background: #90EE90;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 250px;
+}
+ul
+{
+    list-style: none;
+}
+header
+{
+    background: #FF0;
+    height: 60px;
+    left: 250px;
+    width: calc(100% - 250px);
+    right: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    z-index: 99;
+}
+.routeBar
+{
+    background: #ff76d6;
+    height: 40px;
+    left: 250px;
+    width: calc(100% - 250px);
+    right: 0;
+    position: fixed;
+    text-align: center;
+    top: 60px;
+    z-index: 99;
+
+}
+.container
+{
+    top: 100px;
+    left: 250px;
+    height: 100%;
+    width: calc(100% - 250px);
+    position: relative;
+    text-align: center;
+    overflow-y: scroll;
+}
+figure
+{
+    margin: 0;
+}
+img
+{
+    height: 100px;
+    width: 100%;
+}
