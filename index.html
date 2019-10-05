@@ -5,9 +5,9 @@
     <title>Rolando</title>
     <link rel="stylesheet" href="css/zmdi/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="css/index.css">
-
+    <link rel="stylesheet" href="css/night.css">
 </head>
-<body>
+<body class="night">
     <div class="headerShadow">
 
     </div>
@@ -57,6 +57,10 @@
             <div class="routeLabel">Carpeta 4</div>
             <div class="routeLabel">Carpeta 5</div>
             <div class="routeLabel">Carpeta 6</div>
+        </div>
+        <div class="viewOptions">
+            <i class="viewOption zmdi zmdi-eye"></i>
+            <i class="viewOption zmdi zmdi-sun" onclick="nightMode()"></i>
         </div>
     </div>
     <div class="container">
@@ -123,5 +127,20 @@
             <div>Scroll</div>
             <div>Scroll</div>
     </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        function nightMode()
+        {
+            if($('body')[0].classList.contains("night"))
+            {
+                $('body')[0].classList.remove("night");
+            }
+            else
+            {
+                $('body')[0].classList.add("night");
+            }
+        }
+    </script>
 </body>
+
 </html>

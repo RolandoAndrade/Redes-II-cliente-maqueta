@@ -1,0 +1,63 @@
+.night>header
+{
+    background: #2f475f;
+}
+
+.night>header>.headerContainerBig>.searchBar
+{
+    background: #2f475f;
+    border-color: #425360;
+    color: #FAFAFA;
+}
+
+.night>header>.headerContainerBig>.searchButton
+{
+    color: #4f6474;
+}
+
+.night>header>.headerContainerBig>.searchBar:focus
+{
+    border-color: #637d91;
+}
+
+.night>aside
+{
+    background: #2f475f;
+    box-shadow: 0px 5px 15px -4px #222222;
+
+}
+
+.night>aside>nav>.menuOptions>.menuOption
+{
+    background: #2b4056;
+    color: #FAFAFA;
+}
+
+.night>.routeBar
+{
+    background: #2f475f;
+}
+
+
+.night>.routeBar>.route>.routeLabel
+{
+    background: #2b4056;
+    color: #FAFAFA;
+}
+
+
+.night>.routeBar>.viewOptions
+{
+    color: #FAFAFA;
+}
+
+
+.night>.headerShadow
+{
+    background: #2f475f;
+    box-shadow: 0px 5px 5px -4px #222222;
+}
+.night
+{
+    background: #2b4056;
+}

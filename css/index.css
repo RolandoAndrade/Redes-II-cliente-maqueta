@@ -79,6 +79,7 @@ header
     position: relative;
     text-align: center;
     overflow-y: scroll;
+    z-index: 0;
 }
 
 img
@@ -144,7 +145,6 @@ img
 {
     z-index: 100;
     height: 100px;
-    background: #fafafa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,6 +192,7 @@ img
 {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .routeLabel
 {
@@ -202,3 +203,25 @@ img
     border-radius: 10px;
     margin-right: 5px;
 }
+
+.viewOptions
+{
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    padding: 10px;
+    color: #424242;
+}
+
+.viewOption
+{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+}
+
