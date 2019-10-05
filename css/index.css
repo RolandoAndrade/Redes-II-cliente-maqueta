@@ -14,12 +14,13 @@ body
 
 aside
 {
-    background: #90EE90;
+    background: #FAFAFA;
     height: 100%;
     left: 0;
     position: fixed;
     top: 0;
     width: 250px;
+    box-shadow: 0px 5px 15px -4px #888888;
 }
 ul
 {
@@ -27,7 +28,7 @@ ul
 }
 header
 {
-    background: #FF0;
+    background: #FAFAFA;
     height: 60px;
     left: 250px;
     width: calc(100% - 250px);
@@ -42,11 +43,22 @@ header
     padding: 5px;
 
 }
+
+.headerShadow
+{
+    position: fixed;
+    z-index: 100;
+    top: 90px;
+    width: 100%;
+    box-shadow: 0px 5px 5px -4px #888888;
+    background: #FAFAFA;
+    height: 10px;
+}
 .routeBar
 {
     display: flex;
     align-items: center;
-    background: #ff76d6;
+    background: #FAFAFA;
     height: 40px;
     left: 250px;
     width: calc(100% - 250px);
@@ -86,9 +98,16 @@ img
     width: 100%;
     height: 40px;
     font-size: 20px;
-    padding: 5px;
-    border-radius: 5px;
-    border: solid #222222;
+    padding: 15px 50px 15px 15px;
+    border-radius: 10px;
+    border: solid 1px #eeeeee;
+    transition: 0.5s all;
+    color: #424242;
+}
+.searchBar:focus
+{
+    outline: 0;
+    border-color: #848484;
 }
 
 .searchButton
@@ -98,12 +117,13 @@ img
     font-size: 20px;
     top: 4px;
     right: 5px;
-    background: red;
+    background: transparent;
     width: 32px;
     height: 32px;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    color: #848484;
 }
 
 .headerContainerSmall
@@ -121,8 +141,9 @@ img
 
 .nav-header
 {
+    z-index: 100;
     height: 100px;
-    background: white;
+    background: #fafafa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,15 +157,17 @@ img
 
 .menuOptions
 {
-
+    margin-top: 50px;
+    color: #424242;
 }
 .menuOption
 {
     position: relative;
     padding: 20px;
     font-size: 18px;
-    background: #74ee61;
-    margin: 5px;
+    background: #f5f5f5;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .menuOptionIcon
@@ -156,8 +179,8 @@ img
     display: flex;
     top: 15px;
     position: absolute;
-    right: 20px;
-    background: #0050ee;
+    right: 15px;
+    background: transparent;
     width: 32px;
     height: 32px;
     justify-content: center;
