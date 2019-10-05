@@ -2,18 +2,13 @@
 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body
 {
     position: absolute;
     height: 100%;
     width: 100%;
-}
-header
-{
-    width: 100%;
-    height: 100px;
-    position: fixed;
 }
 
 aside
@@ -35,14 +30,21 @@ header
     height: 60px;
     left: 250px;
     width: calc(100% - 250px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     right: 0;
     position: fixed;
     text-align: center;
     top: 0;
     z-index: 99;
+    padding: 5px;
+
 }
 .routeBar
 {
+    display: flex;
+    align-items: center;
     background: #ff76d6;
     height: 40px;
     left: 250px;
@@ -58,7 +60,7 @@ header
 {
     top: 100px;
     left: 250px;
-    height: 100%;
+    height: calc(100% - 100px);
     width: calc(100% - 250px);
     position: relative;
     text-align: center;
@@ -72,4 +74,33 @@ img
 {
     height: 100px;
     width: 100%;
+}
+
+.headerContainerBig
+{
+    width: 100%;
+    height: 40px;
+}
+
+.searchBar
+{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid #222222;
+}
+
+.headerContainerSmall
+{
+    width: 80px;
+    height: 40px;
+}
+
+.profileImage
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
