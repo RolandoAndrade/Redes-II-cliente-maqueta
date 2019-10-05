@@ -126,8 +126,13 @@ img
     align-items: center;
     border-radius: 50%;
     color: #848484;
+    transition: 0.5s all;
+    cursor: pointer;
 }
-
+.searchButton:hover
+{
+    background: #eaeaea;
+}
 .headerContainerSmall
 {
     width: 80px;
@@ -169,6 +174,13 @@ img
     background: #f5f5f5;
     margin: 10px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.menuOption:hover
+{
+    background: #eaeaea;
 }
 
 .menuOptionIcon
@@ -177,16 +189,8 @@ img
 }
 .menuOptionDown
 {
-    display: flex;
-    top: 15px;
     position: absolute;
-    right: 15px;
-    background: transparent;
-    width: 32px;
-    height: 32px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+    right: 25px;
 }
 .route
 {
@@ -202,6 +206,13 @@ img
     padding: 10px;
     border-radius: 10px;
     margin-right: 5px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.routeLabel:hover
+{
+    background: #eaeaea;
 }
 
 .viewOptions
@@ -223,5 +234,12 @@ img
     justify-content: center;
     align-items: center;
     margin-right: 3px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.viewOption:hover
+{
+    background: #eaeaea;
 }
 
